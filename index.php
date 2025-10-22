@@ -130,7 +130,7 @@ if ($action === 'delete' && $id && $is_logged_in) {
                     <thead>
                         <tr>
                             <?php foreach ($columns as $col):
-                                if ($table === 'emloyees' && $col === 'password' && !$is_logged_in) continue;
+                                if ($table === 'employees' && $col === 'password' && !$is_logged_in) continue;
                             ?>
                                 <th><?= translate($col) ?></th>
                             <?php endforeach; ?>
@@ -141,7 +141,7 @@ if ($action === 'delete' && $id && $is_logged_in) {
                         <?php foreach ($rows as $row): ?>
                             <tr>
                                 <?php foreach ($row as $key => $val):
-                                    if ($table === 'emloyees' && $key === 'password' && !$is_logged_in) continue;
+                                    if ($table === 'employees' && $key === 'password' && !$is_logged_in) continue;
                                 ?>
                                     <td><?= htmlspecialchars((string)$val, ENT_QUOTES) ?></td>
                                 <?php endforeach; ?>
