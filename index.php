@@ -208,7 +208,7 @@ if ($action === 'delete' && $id && $is_logged_in) {
         <?php if (!$is_logged_in): ?>
             <a href="auth.php?mode=login">Войти</a>
         <?php else: ?>
-            Пользователь: <b><?= htmlspecialchars($_SESSION['user']['name']) ?></b> | <a href="logout.php">Выйти</a>
+            <a href="logout.php">Выйти</a>
         <?php endif; ?>
     </footer>
 </body>
