@@ -71,7 +71,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && $is_logged_in) {
                 $stmt->execute(array_values($data));
             } elseif ($action === 'edit' && $id) {
                 // Если редактируем пользователя и пароль пустой - не обновляем его
-                if ($table === 'emloyees' && empty($data['password'])) {
+                if ($table === 'employees' && empty($data['password'])) {
                     unset($data['password']);
                 }
                 $set_clauses = implode(', ', array_map(fn($k) => "$k = ?", array_keys($data)));
