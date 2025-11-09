@@ -2,10 +2,11 @@
 // config.php
 
 // Настройки подключения к базе данных
-$host = 'dpg-d3j56rali9vc73dorfng-a.singapore-postgres.render.com';
 $db   = 'bets';
+$host = 'dpg-d4847mbipnbc73d8hlm0-a.singapore-postgres.render.com';
 $user = 'user';
-$pass = '0urzMvp0cvo7Oi7D2CzXEorPHYfQOwZc';
+$pass = 'RFa4bfOpswyRFBK3cZvaU9okEORsFxYO';
+
 $dsn  = "pgsql:host=$host;dbname=$db";
 
 $options = [
